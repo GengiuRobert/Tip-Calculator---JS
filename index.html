@@ -13,24 +13,24 @@
         <h1>Zen Cuisine</h1>
         <h2>Here is your receipt!</h2>
         <div class="items">
-            <p>1 X <img src="img/spaguetti.png"></p>
-            <p>2 X <img src="img/chicken-wings.png"></p>
-            <p>2 X <img src="img/potato.png"></p>
-            <p>2 X <img src="img/salad.png"></p>
-            <p>2 X <img src="img/ketchup.png"></p>
-            <p>2 X <img src="img/can.png"></p>
-            <p>1 X <img src="img/water.png"></p>
-            <p>3 X <img src="img/muffin.png"></p>
+            <p>1 X<img src="img/spaguetti.png"></p>
+            <p>2 X<img src="img/chicken-wings.png"></p>
+            <p>2 X<img src="img/potato.png"></p>
+            <p>2 X<img src="img/salad.png"></p>
+            <p>2 X<img src="img/ketchup.png"></p>
+            <p>2 X<img src="img/can.png"></p>
+            <p>1 X<img src="img/water.png"></p>
+            <p>3 X<img src="img/muffin.png"></p>
 
 
             <div class="total-payment">
-                <h3>Your Total</h3>
-                <input id="total" type="text" value="Introduce Total Payment" required>
+                <h2>Your Total</h2>
+                <input id="total" type="text" value="Introduce Sum..." required>
             </div>
         </div>
 
         <div class="tip">
-            <h3>Choose Tip</h3>
+            <h2>Choose Tip</h2>
             <div class="tip-option">
                 <input type="radio" id="tip0" name="tip" value="0" checked>
                 <label for="tip0">No Tip</label>
@@ -50,16 +50,16 @@
             <div class="tip-option">
                 <input type="radio" id="tipCustom" name="tip" value="custom">
                 <label for="tipCustom">Custom Tip:</label>
-                <input type="number" min="1" max="100" placeholder="1-100">%
+                <input type="number" min="1" max="100" placeholder="1-100"> <label>%</label>
             </div>
         </div>
 
         <button class="compute">Compute total</button>
 
         <div class="total-with-tips">
-            <p>Receipt Total:</p>
-            <p>Tip Total:</p>
-            <p>Total to Pay:</p>
+            <p id="receipt-total"></p>
+            <p id="tip-total"></p>
+            <p id="total-to-pay"></p>
         </div>
 
     </div>
