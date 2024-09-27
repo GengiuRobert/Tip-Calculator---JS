@@ -30,21 +30,32 @@
         </div>
 
         <div class="tip">
-            <input type="radio" id="tip0" value="0">
-            <label for="tip0">No Tip</label><br>
-            <input type="radio" id="tip1" value="5">
-            <label for="tip1">5%</label><br>
-            <input type="radio" id="tip2" value="10">
-            <label for="tip2">10%</label><br>
-            <input type="radio" id="tip3" value="15">
-            <label for="tip3">15%</label><br>
-            <input type="radio" id="tipCustom" value="custom">
-            <label for="tipCustom">Custom Tip:</label>
-            <input type="number" min="1" max="100" placeholder="1-100">%<br>
+            <h3>Choose Tip</h3>
+            <div class="tip-option">
+                <input type="radio" id="tip0" value="0">
+                <label for="tip0">No Tip</label>
+            </div>
+            <div class="tip-option">
+                <input type="radio" id="tip1" value="5">
+                <label for="tip1">5%</label>
+            </div>
+            <div class="tip-option">
+                <input type="radio" id="tip2" value="10">
+                <label for="tip2">10%</label>
+            </div>
+            <div class="tip-option">
+                <input type="radio" id="tip3" value="15">
+                <label for="tip3">15%</label>
+            </div>
+            <div class="tip-option">
+                <input type="radio" id="tipCustom" value="custom">
+                <label for="tipCustom">Custom Tip:</label>
+                <input type="number" min="1" max="100" placeholder="1-100">%
+            </div>
         </div>
 
         <button class="compute">Compute total</button>
-        
+
         <div class="total-with-tips">
             <p>Receipt Total:</p>
             <p>Tip Total:</p>

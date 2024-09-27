@@ -24,6 +24,24 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     text-align: center;
-    width: 500px;
+    width: 350px;
     margin: 20px;
+    border: 2px solid black;
+}
+
+.tip {
+    padding: 20px;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tip-option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.tip input[type="radio"] {
+    margin-right: 5px;
 }
