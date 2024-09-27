@@ -72,3 +72,13 @@ button,
     align-items: center;
     justify-content: center;
 }
+
+.compute {
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.compute:hover {
+    background-color: lightgrey;
+}
