@@ -15,7 +15,7 @@ computeButton.addEventListener("click", () => {
     const totalToPayText = document.getElementById("total-to-pay");
 
     sumInput.style.color = "black";
-    if (isNaN(sumValue) || sumValue < 0) {
+    if (isNaN(sumValue) || sumValue <= 0) {
         sumInput.value = "Introduce a number >0"
         sumInput.style.color = "red";
         receiptTotalText.textContent = ``;
