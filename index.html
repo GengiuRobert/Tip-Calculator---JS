@@ -50,11 +50,12 @@
             <div class="tip-option">
                 <input type="radio" id="tipCustom" name="tip" value="custom">
                 <label for="tipCustom">Custom Tip:</label>
-                <input type="number" min="1" max="100" placeholder="1-100"> <label>%</label>
+                <input type="number" id="percentage" min="1" max="100" placeholder="1-100" value="1"> <label
+                    for="percentage">%</label>
             </div>
         </div>
 
-        <button class="compute">Compute total</button>
+        <button id="computeButton" class="compute">Compute total</button>
 
         <div class="total-with-tips">
             <p id="receipt-total"></p>
@@ -63,6 +64,7 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
