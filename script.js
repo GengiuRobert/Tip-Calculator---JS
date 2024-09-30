@@ -1,5 +1,10 @@
 const sumInput = document.getElementById("total");
 const computeButton = document.getElementById("computeButton");
+const resetButton = document.getElementById("resetButton");
+const receiptTotalText = document.getElementById("receipt-total");
+const tipTotalText = document.getElementById("tip-total");
+const totalToPayText = document.getElementById("total-to-pay");
+const defaultTipRadioButton = document.getElementById("tip0");
 
 sumInput.addEventListener("input", () => {
     sumInput.style.color = "black";
@@ -9,10 +14,6 @@ computeButton.addEventListener("click", () => {
     let totalToPay = 0;
     let tipValue = 0;
     const sumValue = parseFloat(sumInput.value);
-
-    const receiptTotalText = document.getElementById("receipt-total");
-    const tipTotalText = document.getElementById("tip-total");
-    const totalToPayText = document.getElementById("total-to-pay");
 
     sumInput.style.color = "black";
     if (isNaN(sumValue) || sumValue <= 0) {
@@ -40,4 +41,14 @@ computeButton.addEventListener("click", () => {
         tipTotalText.textContent = `Tip Total: ${tipValue}$`;
         totalToPayText.textContent = `Your Total To Pay: ${totalToPay}$`
     }
+});
+
+
+resetButton.addEventListener("click", () => {
+    receiptTotalText.textContent = ``;
+    tipTotalText.textContent = ``;
+    totalToPayText.textContent = ``;
+    sumInput.value = ``;
+    defaultTipRadioButton.checked = true;
+    document.getElementById("percentage").value = 1;
 });
