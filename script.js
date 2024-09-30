@@ -9,7 +9,7 @@ const defaultTipRadioButton = document.getElementById("tip0");
 sumInput.addEventListener("keydown", (event) => {
     const alphabet = /[a-zA-Z]/;
     const specialCharacters = /[!@#$%^&*(),.?";:{}|<>[\]\\]/;
-    if ((alphabet.test(event.key)) || event.key === '-' || specialCharacters.test(event.key)) {
+    if ((alphabet.test(event.key)) || event.key === '-' || specialCharacters.test(event.key) || event.key===' ') {
         event.preventDefault();
     }
 });
