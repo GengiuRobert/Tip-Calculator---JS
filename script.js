@@ -6,8 +6,10 @@ const tipTotalText = document.getElementById("tip-total");
 const totalToPayText = document.getElementById("total-to-pay");
 const defaultTipRadioButton = document.getElementById("tip0");
 
-sumInput.addEventListener("input", () => {
-    sumInput.style.color = "black";
+sumInput.addEventListener("keydown", function (event) {
+    if (event.key === 'e' || event.key === 'E') {
+        event.preventDefault();
+    }
 });
 
 computeButton.addEventListener("click", () => {
@@ -17,8 +19,6 @@ computeButton.addEventListener("click", () => {
 
     sumInput.style.color = "black";
     if (isNaN(sumValue) || sumValue <= 0) {
-        sumInput.value = "Introduce a number >0"
-        sumInput.style.color = "red";
         receiptTotalText.textContent = ``;
         tipTotalText.textContent = ``;
         totalToPayText.textContent = ``
