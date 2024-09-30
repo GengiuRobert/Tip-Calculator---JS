@@ -7,7 +7,9 @@ const totalToPayText = document.getElementById("total-to-pay");
 const defaultTipRadioButton = document.getElementById("tip0");
 
 sumInput.addEventListener("keydown", (event) => {
-    if (event.key === 'e' || event.key === 'E' || event.key === '-') {
+    const alphabet = /[a-zA-Z]/;
+    const specialCharacters = /[!@#$%^&*(),.?";:{}|<>[\]\\]/;
+    if ((alphabet.test(event.key)) || event.key === '-' || specialCharacters.test(event.key)) {
         event.preventDefault();
     }
 });
